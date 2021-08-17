@@ -257,7 +257,6 @@
       PointLatLng selectionStart;
       PointLatLng selectionEnd;
       Typeface tileTypeface = new Typeface("Arial");
-      bool showTileGridLines = false;
 
       FormattedText Copyright;
 
@@ -423,16 +422,17 @@
       [Category("GMap.NET")]
       public bool ShowTileGridLines
       {
-         get
+         get { return (bool)GetValue(ShowTileGridLinesProperty); }
+         set 
          {
-            return showTileGridLines;
-         }
-         set
-         {
-            showTileGridLines = value;
+            SetValue(ShowTileGridLinesProperty, value);
             InvalidateVisual();
          }
       }
+
+      // Using a DependencyProperty as the backing store for ShowTileGridLines.  This enables animation, styling, binding, etc...
+      public static readonly DependencyProperty ShowTileGridLinesProperty =
+          DependencyProperty.Register("ShowTileGridLines", typeof(bool), typeof(GMapControl), new PropertyMetadata(false));
 
       /// <summary>
       /// retry count to get tile
@@ -501,10 +501,19 @@
       /// </summary>
       public event SelectionChange OnSelectionChange;
 
-      /// <summary>
-      /// list of markers
-      /// </summary>
-      public readonly ObservableCollection<GMapMarker> Markers = new ObservableCollection<GMapMarker>();
+      public ObservableCollection<GMapMarker> Markers
+      {
+         get { return (ObservableCollection<GMapMarker>)GetValue(MarkersProperty); }
+         set { SetValue(MarkersProperty, value); }
+      }
+
+      // Using a DependencyProperty as the backing store for Markers.
+      public static readonly DependencyProperty MarkersProperty =
+          DependencyProperty.Register(
+             name: "Markers", 
+             propertyType: typeof(ObservableCollection<GMapMarker>), 
+             ownerType: typeof(GMapControl), 
+             typeMetadata: new PropertyMetadata(defaultValue: new ObservableCollection<GMapMarker>()));
 
       /// <summary>
       /// current markers overlay offset
@@ -2326,18 +2335,23 @@
          }
       }
 
+      /// <summary>
+      /// Enables the user to drag the map.
+      /// </summary>
       [Category("GMap.NET")]
       public bool CanDragMap
       {
-         get
-         {
-            return Core.CanDragMap;
-         }
-         set
+         get { return (bool)GetValue(CanDragMapProperty); }
+         set 
          {
             Core.CanDragMap = value;
+            SetValue(CanDragMapProperty, value); 
          }
       }
+
+      // Using a DependencyProperty as the backing store for CanDragMap.
+      public static readonly DependencyProperty CanDragMapProperty =
+          DependencyProperty.Register("CanDragMap", typeof(bool), typeof(GMapControl), new PropertyMetadata(true));
 
       public GMap.NET.RenderMode RenderMode
       {
