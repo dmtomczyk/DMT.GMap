@@ -1,25 +1,104 @@
+<!-- PROJECT LOGO -->
+<br />
 <p align="center">
-  <img src="../master/Img/logo99.png" />
+  <a href="https://github.com/dmtomczyk/greatmaps/">
+    <img src="GMap.NET.Core/Resources/Logo.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">DMT.GMap</h3>
+
+  <p align="center">
+    Great Maps.
+    <br />
+    <a href="https://github.com/dmtomczyk/greatmaps/"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/dmtomczyk/greatmaps/">Report Bug</a>
+  </p>
 </p>
 
-***
-...mission is in progress, great maps helps greatly! ;} ...real FLAT EARTH maps are missing though, no ANTARCTICA maps either. ![](../master/Img/doh.gif)
-***
-**GMap.NET** is great and Powerful, Free, cross platform, open
-source .NET control. Enable use routing, geocoding, directions and
-maps from Coogle, Yahoo!, Bing, OpenStreetMap, ArcGIS, Pergo,
-SigPac, Yendux, Mapy.cz, Maps.lt, iKarte.lv, NearMap, OviMap,
-CloudMade, WikiMapia, MapQuest in Windows Forms & Presentation,
-supports caching and runs on windows mobile!
 
-![](../master/Img/demo.png)
-![](../master/Img/yahoomap_f_small.png) ![](../master/Img/openstreetmaps_small.png) ![](../master/Img/gmap_mobile_small.png) ![](../master/Img/softpedia_free_award_f.gif)
-<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=email%40radioman%2elt&lc=LT&item_name=GMap%2eNET%20%2d%20Great%20Maps%20for%20Windows%20Forms%20%26%20Presentation&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted" target="_blank"><img title="encourage project support ;}" src="../master/Img/btn_donateCC_LG.gif" /><a/>
 
-<p align="center">
-<a href="https://www.youtube.com/watch?v=debcXgOi0T0" target="_blank"><img title="True World | Flat Earth Documentary - 2016" src="../master/Img/red-pill.jpg" /><a/><img src="../master/Img/doh.gif" />
-</p>
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+      </ul>
+    </li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+</details>
 
-<p align="center">
-<a href="https://thepiratebay.se/" target="_blank"><img title="Sail ;}" src="../master/Img/tpb-logo.gif" /></a>
-</p>
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+TODO: 
+
+
+
+### Built With
+
+This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+* [WPF](https://docs.microsoft.com/en-us/visualstudio/designers/getting-started-with-wpf?view=vs-2019#:~:text=Windows%20Presentation%20Foundation%20(WPF)%20is,binding%2C%20documents%2C%20and%20security.)
+* [MVVMLight](https://github.com/lbugnion/mvvmlight)
+
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+1. Clone the repository
+2. Open with Visual Studio 2017+
+3. Build and run one of the demo projects
+
+
+<!-- ROADMAP -->
+## Roadmap
+
+See the [open issues]() for a list of proposed features (and known issues).
+
+
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+
+
+1. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+2. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+3. Push to the Branch (`git push origin feature/AmazingFeature`)
+4. Open a Pull Request
+
+
+
+<!-- CONTACT -->
+## Contact
+
+Daymian Tomczyk - daymian.tomczyk@outlook.com
+
+
+
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+* [CommonServiceLocator v2.0.4](https://www.nuget.org/packages/CommonServiceLocator/)
+
+
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
