@@ -8,7 +8,7 @@
   <h3 align="center">DMT.GMap</h3>
 
   <p align="center">
-    Great Maps.
+    Great Maps for WPF and WinForms projects.
     <br />
     <a href="https://github.com/dmtomczyk/greatmaps/"><strong>Explore the docs »</strong></a>
     <br />
@@ -31,9 +31,6 @@
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-      </ul>
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -45,9 +42,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-TODO: 
-
+This project is forked from https://github.com/radioman/greatmaps with the intent of adding additional capabilities and refactoring the source to support basic WPF functions like MVVM via improved data binding options.
 
 
 ### Built With
