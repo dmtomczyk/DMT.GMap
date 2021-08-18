@@ -9,8 +9,8 @@ root = true
 
 [*]
 indent_style = space
-indent_size = 3
+indent_size = 4
 
 [*.{proj,csproj,vcxproj,xproj,json,config}]
 indent_style = space
-indent_size = 3
+indent_size = 4

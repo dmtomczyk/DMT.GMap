@@ -1,7 +1,41 @@
-﻿<UserControl
-	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	x:Class="Demo.WindowsPresentation.CustomMarkers.CustomMarkerRed"
-	Height="40" Width="30" Opacity="10">
-		<Image Name="icon" Source="red-dot.png" VerticalAlignment="Center" HorizontalAlignment="Center" />
+﻿<UserControl x:Class="Demo.WindowsPresentation.CustomMarkers.CustomMarkerRed" 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Demo.WindowsPresentation.CustomMarkers"
+    x:Name="CustomMarkerRedElement"
+    Loaded="CustomMarkerDemo_Loaded"
+    SizeChanged="CustomMarkerDemo_SizeChanged"
+    MouseEnter="MarkerControl_MouseEnter"
+    MouseLeave="MarkerControl_MouseLeave"
+    MouseMove="CustomMarkerDemo_MouseMove"
+    MouseLeftButtonUp="CustomMarkerDemo_MouseLeftButtonUp"
+    MouseLeftButtonDown="CustomMarkerDemo_MouseLeftButtonDown"
+    Height="40"
+    Width="30"
+    Opacity="10">
+
+    <Grid>
+
+        <Image x:Name="redPlacemarkIcon"
+            Source="red-dot.png"
+            Height="40"
+            Width="30"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center" />
+
+        <Popup x:Name="labelPopup" Placement="Mouse">
+
+            <Label Content="{Binding Path=Title, ElementName=CustomMarkerRedElement}"
+                Background="Blue"
+                Foreground="White"
+                BorderBrush="WhiteSmoke"
+                BorderThickness="2"
+                Padding="5"
+                FontSize="22" />
+            
+        </Popup>
+
+    </Grid>
+
+
 </UserControl>

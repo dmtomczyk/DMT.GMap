@@ -18,7 +18,7 @@ namespace GMap.NET.MapProviders
     {
         static GMapProviders()
         {
-            list = new List<GMapProvider>();
+            List = new List<GMapProvider>();
 
             Type type = typeof(GMapProviders);
             foreach (var p in type.GetFields())
@@ -26,18 +26,18 @@ namespace GMap.NET.MapProviders
                 var v = p.GetValue(null) as GMapProvider; // static classes cannot be instanced, so use null...
                 if (v != null)
                 {
-                    list.Add(v);
+                    List.Add(v);
                 }
             }
 
             Hash = new Dictionary<Guid, GMapProvider>();
-            foreach (var p in list)
+            foreach (var p in List)
             {
                 Hash.Add(p.Id, p);
             }
 
             DbHash = new Dictionary<int, GMapProvider>();
-            foreach (var p in list)
+            foreach (var p in List)
             {
                 DbHash.Add(p.DbId, p);
             }
@@ -109,38 +109,38 @@ namespace GMap.NET.MapProviders
         public static readonly YandexSatelliteMapProvider YandexSatelliteMap = YandexSatelliteMapProvider.Instance;
         public static readonly YandexHybridMapProvider YandexHybridMap = YandexHybridMapProvider.Instance;
 
-        public static readonly LithuaniaMapProvider LithuaniaMap = LithuaniaMapProvider.Instance;
-        public static readonly LithuaniaReliefMapProvider LithuaniaReliefMap = LithuaniaReliefMapProvider.Instance;
-        public static readonly Lithuania3dMapProvider Lithuania3dMap = Lithuania3dMapProvider.Instance;
-        public static readonly LithuaniaOrtoFotoMapProvider LithuaniaOrtoFotoMap = LithuaniaOrtoFotoMapProvider.Instance;
-        public static readonly LithuaniaOrtoFotoOldMapProvider LithuaniaOrtoFotoOldMap = LithuaniaOrtoFotoOldMapProvider.Instance;
-        public static readonly LithuaniaHybridMapProvider LithuaniaHybridMap = LithuaniaHybridMapProvider.Instance;
-        public static readonly LithuaniaHybridOldMapProvider LithuaniaHybridOldMap = LithuaniaHybridOldMapProvider.Instance;
-        public static readonly LithuaniaTOP50 LithuaniaTOP50Map = LithuaniaTOP50.Instance;
+        //public static readonly LithuaniaMapProvider LithuaniaMap = LithuaniaMapProvider.Instance;
+        //public static readonly LithuaniaReliefMapProvider LithuaniaReliefMap = LithuaniaReliefMapProvider.Instance;
+        //public static readonly Lithuania3dMapProvider Lithuania3dMap = Lithuania3dMapProvider.Instance;
+        //public static readonly LithuaniaOrtoFotoMapProvider LithuaniaOrtoFotoMap = LithuaniaOrtoFotoMapProvider.Instance;
+        //public static readonly LithuaniaOrtoFotoOldMapProvider LithuaniaOrtoFotoOldMap = LithuaniaOrtoFotoOldMapProvider.Instance;
+        //public static readonly LithuaniaHybridMapProvider LithuaniaHybridMap = LithuaniaHybridMapProvider.Instance;
+        //public static readonly LithuaniaHybridOldMapProvider LithuaniaHybridOldMap = LithuaniaHybridOldMapProvider.Instance;
+        //public static readonly LithuaniaTOP50 LithuaniaTOP50Map = LithuaniaTOP50.Instance;
 
-        public static readonly LatviaMapProvider LatviaMap = LatviaMapProvider.Instance;
+        //public static readonly LatviaMapProvider LatviaMap = LatviaMapProvider.Instance;
 
         public static readonly MapBenderWMSProvider MapBenderWMSdemoMap = MapBenderWMSProvider.Instance;
 
-        public static readonly TurkeyMapProvider TurkeyMap = TurkeyMapProvider.Instance;
+        //public static readonly TurkeyMapProvider TurkeyMap = TurkeyMapProvider.Instance;
 
         public static readonly CloudMadeMapProvider CloudMadeMap = CloudMadeMapProvider.Instance;
 
-        public static readonly SpainMapProvider SpainMap = SpainMapProvider.Instance;
+        //public static readonly SpainMapProvider SpainMap = SpainMapProvider.Instance;
 
-        public static readonly CzechMapProviderOld CzechOldMap = CzechMapProviderOld.Instance;
-        public static readonly CzechSatelliteMapProviderOld CzechSatelliteOldMap = CzechSatelliteMapProviderOld.Instance;
-        public static readonly CzechHybridMapProviderOld CzechHybridOldMap = CzechHybridMapProviderOld.Instance;
-        public static readonly CzechTuristMapProviderOld CzechTuristOldMap = CzechTuristMapProviderOld.Instance;
-        public static readonly CzechHistoryMapProviderOld CzechHistoryOldMap = CzechHistoryMapProviderOld.Instance;
+        //public static readonly CzechMapProviderOld CzechOldMap = CzechMapProviderOld.Instance;
+        //public static readonly CzechSatelliteMapProviderOld CzechSatelliteOldMap = CzechSatelliteMapProviderOld.Instance;
+        //public static readonly CzechHybridMapProviderOld CzechHybridOldMap = CzechHybridMapProviderOld.Instance;
+        //public static readonly CzechTuristMapProviderOld CzechTuristOldMap = CzechTuristMapProviderOld.Instance;
+        //public static readonly CzechHistoryMapProviderOld CzechHistoryOldMap = CzechHistoryMapProviderOld.Instance;
 
-        public static readonly CzechMapProvider CzechMap = CzechMapProvider.Instance;
-        public static readonly CzechSatelliteMapProvider CzechSatelliteMap = CzechSatelliteMapProvider.Instance;
-        public static readonly CzechHybridMapProvider CzechHybridMap = CzechHybridMapProvider.Instance;
-        public static readonly CzechTuristMapProvider CzechTuristMap = CzechTuristMapProvider.Instance;
-        public static readonly CzechTuristWinterMapProvider CzechTuristWinterMap = CzechTuristWinterMapProvider.Instance;
-        public static readonly CzechHistoryMapProvider CzechHistoryMap = CzechHistoryMapProvider.Instance;
-        public static readonly CzechGeographicMapProvider CzechGeographicMap = CzechGeographicMapProvider.Instance;
+        //public static readonly CzechMapProvider CzechMap = CzechMapProvider.Instance;
+        //public static readonly CzechSatelliteMapProvider CzechSatelliteMap = CzechSatelliteMapProvider.Instance;
+        //public static readonly CzechHybridMapProvider CzechHybridMap = CzechHybridMapProvider.Instance;
+        //public static readonly CzechTuristMapProvider CzechTuristMap = CzechTuristMapProvider.Instance;
+        //public static readonly CzechTuristWinterMapProvider CzechTuristWinterMap = CzechTuristWinterMapProvider.Instance;
+        //public static readonly CzechHistoryMapProvider CzechHistoryMap = CzechHistoryMapProvider.Instance;
+        //public static readonly CzechGeographicMapProvider CzechGeographicMap = CzechGeographicMapProvider.Instance;
         
         public static readonly ArcGIS_Imagery_World_2D_MapProvider ArcGIS_Imagery_World_2D_Map = ArcGIS_Imagery_World_2D_MapProvider.Instance;
         public static readonly ArcGIS_ShadedRelief_World_2D_MapProvider ArcGIS_ShadedRelief_World_2D_Map = ArcGIS_ShadedRelief_World_2D_MapProvider.Instance;
@@ -155,20 +155,10 @@ namespace GMap.NET.MapProviders
 
         public static readonly ArcGIS_DarbAE_Q2_2011_NAVTQ_Eng_V5_MapProvider ArcGIS_DarbAE_Q2_2011_NAVTQ_Eng_V5_Map = ArcGIS_DarbAE_Q2_2011_NAVTQ_Eng_V5_MapProvider.Instance;
 
-        public static readonly SwedenMapProvider SwedenMap = SwedenMapProvider.Instance;
-
-        static List<GMapProvider> list;
-
         /// <summary>
         /// get all instances of the supported providers
         /// </summary>
-        public static List<GMapProvider> List
-        {
-            get
-            {
-                return list;
-            }
-        }
+        public static List<GMapProvider> List { get; private set; }
 
         static Dictionary<Guid, GMapProvider> Hash;
 
