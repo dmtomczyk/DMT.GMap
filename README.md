@@ -47,7 +47,7 @@ This project is forked from https://github.com/radioman/greatmaps with the inten
 
 ### Built With
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+Major frameworks:
 * [WPF](https://docs.microsoft.com/en-us/visualstudio/designers/getting-started-with-wpf?view=vs-2019#:~:text=Windows%20Presentation%20Foundation%20(WPF)%20is,binding%2C%20documents%2C%20and%20security.)
 * [MVVMLight](https://github.com/lbugnion/mvvmlight)
 
